@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System - Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+            margin: 50px;
+        }
+
+        .form-box {
+            background: #d3d3d3;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+
+        .header {
+            background-color: #87ceeb;
+            color: black;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            background-color: #4169e1;
+            color: white;
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            flex: 2;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4169e1;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .signup-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .signup-button button {
+            background-color: #4169e1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            background: #d3d3d3;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin: 10px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .sidebar li::before {
+            content: "*";
+            color: black;
+            margin-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Form Section -->
+        <div class="form-box">
+            <div class="header">Event Management System</div>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Vendor">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Vendor">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Vendor">
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option>Drop Down</option>
+                    <option>Catering</option>
+                    <option>Florist</option>
+                    <option>Decoration</option>
+                    <option>Lighting</option>
+                </select>
+            </div>
+
+            <div class="signup-button">
+                <button type="submit">Sign Up</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Page</title>
+    <style>
+        .container {
+            background-color: #4A90E2; /* Blue background */
+            width: 600px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 50px auto;
+        }
+        .welcome-box {
+            background-color: #E0E0E0; /* Gray box */
+            padding: 10px;
+            margin: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        button {
+            background-color: #E0E0E0;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #C0C0C0;
+        }
+        .category-container {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .form-group {
+            margin-top: 10px;
+            text-align: left;
+        }
+        .form-group select {
+            padding: 8px;
+            width: 100%;
+            margin-top: 5px;
+        }
+        .sign-up-button-container {
+            margin-top: 20px;
+        }
+        .sign-up-button-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4169e1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .sign-up-button-container button:hover {
+            background-color: #5A8AEE;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-box">WELCOME USER</div>
+        
+        <div class="button-container">
+            <button onclick="toggleCategory()">Vendor</button>
+
+            <!-- Category Dropdown Section -->
+            <div id="categoryContainer" class="category-container">
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option>Drop Down</option>
+                        <option>Catering</option>
+                        <option>Florist</option>
+                        <option>Decoration</option>
+                        <option>Lighting</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button>Cart</button>
+            <button>Guest List</button>
+            <button>Order Status</button>
+        </div>
+
+        <!-- Sign Up Button at the bottom -->
+        <div class="sign-up-button-container">
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to toggle the category dropdown
+        function toggleCategory() {
+            var categoryContainer = document.getElementById('categoryContainer');
+            if (categoryContainer.style.display === 'none' || categoryContainer.style.display === '') {
+                categoryContainer.style.display = 'block';
+            } else {
+                categoryContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

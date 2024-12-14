@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: rgb(247, 243, 243);
+        }
+        .container {
+            background-color: #ffffff; 
+            width: 1000px;
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 50px auto;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Top bar styling */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            top: 0;
+            width: 100%;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+        .top-bar button {
+            background-color: #2609fd;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            color: white;
+        }
+        .top-bar button:hover {
+            background-color: #5A8AEE;
+        }
+
+        /* Shopping Cart Heading */
+        .shopping-cart-heading {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2609fd;
+            margin-top: 20px;
+        }
+
+        /* Button container and item buttons */
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        button, select {
+            background-color: #2609fd;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 10px;
+            width: 15%; /* Adjust width to match the buttons */
+            color: white;
+        }
+        button:hover, select:hover {
+            background-color: #5A8AEE;
+        }
+
+        /* Custom Styling for Dropdown (2V) */
+        select {
+            appearance: none; /* Remove default dropdown arrow */
+            -webkit-appearance: none; /* Remove for Safari */
+            -moz-appearance: none; /* Remove for Firefox */
+            background-color: #2609fd;
+            border-radius: 10px;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            color: white;
+            width: 15%; /* Adjust width to match the buttons */
+        }
+
+        .grand-total {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2609fd;
+            margin-top: 30px;
+        }
+
+        /* Delete All Button */
+        .delete-all-btn {
+            background-color: #ff4747; /* Red for delete */
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+        }
+
+        .delete-all-btn:hover {
+            background-color: #ff1f1f;
+        }
+
+        /* Proceed to Checkout Button */
+        .proceed-checkout-btn {
+            background-color: #4CAF50; /* Green for checkout */
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+        }
+
+        .proceed-checkout-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top bar with centered "Request Item" -->
+        <div class="top-bar">
+            <button>Home</button>
+            <button>View Product</button> 
+            <button>Request Item</button>
+            <button>Product Status</button>
+        </div>
+
+        <!-- Shopping Cart Heading -->
+        <div class="shopping-cart-heading">
+            Shopping Cart
+        </div>
+
+        <!-- Button container for cart items -->
+        <div class="button-container">
+            <button>Image</button>
+            <button>Name</button>
+            <button>Price</button>
+            <button>Quantity</button>
+            <button>Total Price</button>
+            <button>Action</button>
+        </div>
+
+        <!-- Cart item details -->
+        <div class="button-container">
+            <button>Image</button>
+            <button>Product Name</button>
+            <button>100/-</button>
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <button>200/-</button>
+            <button>Remove</button>
+        </div>
+
+        <!-- Grand Total Section -->
+        <div class="grand-total">
+            Grand Total: 200/-
+        </div>
+
+        <!-- Delete All Button -->
+        <button class="delete-all-btn">Delete All</button>
+
+        <!-- Proceed to Checkout Button -->
+        <button class="proceed-checkout-btn">Proceed to Checkout</button>
+    </div>
+</body>
+</html>

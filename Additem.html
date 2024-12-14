@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #000;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #f0f0f0;
+            width: 800px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .header {
+            background-color: #2f67d3;
+            padding: 10px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .header button {
+            background-color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #2f67d3;
+            border-radius: 5px;
+        }
+        .form input {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .form button {
+            background-color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product-table {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        .product-table div {
+            background-color: #2f67d3;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .actions {
+            display: flex;
+            gap: 5px;
+        }
+        .actions button {
+            background-color: #fff;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div>Welcome</div>
+            <div>
+                <a href="file:///C:/Users/Arjun/Desktop/LM/Request%20Item.html">
+                    <button>Product Status</button>
+                </a>
+                
+                <button>Request Item</button>
+                <button>View Product</button>
+                <button>Log Out</button>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="form">
+            <input type="text" placeholder="Product Name">
+            <input type="text" placeholder="Product Price">
+            <input type="file" placeholder="Product Image">
+            <button>Add The Product</button>
+        </div>
+
+        <!-- Product Table -->
+        <div class="product-table">
+            <div>Product Image</div>
+            <div>Product Name</div>
+            <div>Product Price</div>
+            <div>Action</div>
+            <div>Image</div>
+            <div>Image Name</div>
+            <div>Rs/-</div>
+            <div class="actions">
+                <button>Delete</button>
+                <button>Update</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

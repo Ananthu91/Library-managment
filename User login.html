@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d9d9d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        .header {
+            background-color: #99ccff;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .input-label {
+            text-align: left;
+            font-size: 14px;
+            margin: 10px 0 5px;
+            display: block;
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #3b6ba5;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #2a4f7b;
+        }
+        @media (max-width: 500px) {
+            .container {
+                padding: 15px;
+            }
+            .button {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Event Management System</div>
+        <form action="file:///C:/Users/Arjun/Desktop/LM/cart.html" method="get">
+            <label class="input-label" for="user-id">User ID</label>
+            <input type="text" id="user-id" name="user-id" placeholder="User" required>
+
+            <label class="input-label" for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <div>
+                <button class="button" type="button" onclick="window.location.href='file:///C:/Users/Arjun/Desktop/LM/index.html'">Cancel</button>
+                <button class="button" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

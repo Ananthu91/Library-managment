@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System - Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            background: #d3d3d3;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .header {
+            text-align: center;
+            background-color: #87ceeb;
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 50px; /* Adds space to avoid overlapping with buttons */
+        }
+        .button-row {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: calc(100% - 40px); /* Keeps buttons inside the container */
+            z-index: 1;
+        }
+        .button {
+            background-color: #4169e1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .form-group {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+        .form-group label {
+            flex: 1;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #4169e1;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .form-group input {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid #87ceeb;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .form-buttons button {
+            background-color: #808080;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Button Row (CHART and BACK) -->
+        <div class="button-row">
+            <a href="#" class="button">CHART</a>
+            <a href="#" class="button">BACK</a>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-box">
+            <div class="header">Event Management System</div>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="User">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="User">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="User">
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

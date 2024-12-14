@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container to hold the options */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Style for each option button */
+        .option-btn {
+            background-color: #2609fd;
+            color: white;
+            font-size: 1.5em;
+            padding: 20px 40px;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Hover effect for buttons */
+        .option-btn:hover {
+            background-color: #5A8AEE;
+            transform: scale(1.1);
+        }
+
+        /* Icon for the buttons */
+        .option-btn i {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        /* Title below each button */
+        .option-btn span {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+        }
+
+        /* Background color and styling for page */
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="file:///C:/Users/Arjun/Desktop/LM/Admin.html">
+            <button class="option-btn">
+                <i class="fas fa-user-shield"></i>
+                <span>Admin</span>
+            </button>
+        </a>
+        
+
+        <!-- Vendor Option -->
+        <a href="C:\Users\Arjun\Desktop\LM\vendor.html">
+        <button class="option-btn">
+            <i class="fas fa-store"></i>
+            <span>Vendor</span>
+        </button>
+</a>
+
+        <!-- User Option -->
+      <a href="C:\Users\Arjun\Desktop\LM\User login.html">
+        <button class="option-btn">
+            <i class="fas fa-user"></i>
+            <span>User</span>
+        </button>
+        </a>
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

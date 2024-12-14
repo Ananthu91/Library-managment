@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .header {
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4169e1;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #4169e1;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        .button {
+            background-color: #4169e1;
+            color: white;
+            padding: 12px 20px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #5A8AEE;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Admin Login</div>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="userid">User ID</label>
+                <input type="text" id="userid" name="userid" placeholder="Enter User ID" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <button type="button" class="button" onclick="login()">Login</button>
+        </form>
+        <div id="error" class="error"></div>
+    </div>
+
+    <script>
+        function login() {
+            var userid = document.getElementById('userid').value;
+            var password = document.getElementById('password').value;
+
+            // You can add your admin credentials validation here (example below)
+            var correctUserId = 'admin'; // Example Admin ID
+            var correctPassword = 'admin123'; // Example Password
+
+            if (userid === correctUserId && password === correctPassword) {
+                // Redirect to the 'add.html' page if login is successful
+                window.location.href = 'file:///C:/Users/Arjun/Desktop/LM/add.html';
+            } else {
+                // Show error message if login fails
+                document.getElementById('error').textContent = 'Invalid User ID or Password';
+            }
+        }
+    </script>
+
+</body>
+</html>
